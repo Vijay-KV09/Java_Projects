@@ -40,20 +40,7 @@ public class notepad extends JFrame implements ActionListener{
         menu1.add(open_file);
         menu1.add(save_file);
 
-        JMenu menu2 = new JMenu("Edit");
-        JMenuItem copy_text = new JMenuItem("Copy");
-        JMenuItem paste_text = new JMenuItem("Paste");
-        menu2.add(copy_text);
-        menu2.add(paste_text);
-
-
-        JMenu menu3 = new JMenu("View");
-        JMenuItem word_wrap = new JMenuItem("Word Wrap");
-        menu3.add(word_wrap);
-
         menubar.add(menu1);
-        menubar.add(menu2);
-        menubar.add(menu3);
         setJMenuBar(menubar);
 
         area = new JTextArea();
